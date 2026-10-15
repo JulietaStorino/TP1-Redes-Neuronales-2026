@@ -190,7 +190,7 @@ def plot_exercise_1(path):
     t, v, u, spikes = simulate(p, v0, 100)
 
     fig, axes = plt.subplots(
-        3, 1, figsize=(COLUMN_WIDTH, 3.2),
+        3, 1, figsize=(COLUMN_WIDTH, 2.7),
         sharex=True,
         gridspec_kw={"height_ratios": [3, 2, 1.2]}
     )
@@ -238,7 +238,7 @@ def plot_firing_patterns(path):
     spikes : dict
         Spike times [ms] for each case label.
     """
-    fig = plt.figure(figsize=(TEXT_WIDTH, 3.6))
+    fig = plt.figure(figsize=(TEXT_WIDTH, 3.15))
     outer = fig.add_gridspec(2, 4, hspace=0.5, wspace=0.32)
 
     spikes = {}
